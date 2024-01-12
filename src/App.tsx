@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Box, Button, Grid, GridItem, HStack, Show } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, HStack, Heading, Link, Show } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
@@ -45,6 +45,7 @@ function App() {
         <HStack spacing={5} paddingLeft={10} marginBottom={5}>
           <PlatformSelector selectedPlatform={gameQuery.platform} onSelectedPlatform={(platform) => setGameQuery({ ...gameQuery, platform })} />
           <SortSelector sortOrder={gameQuery.sortOrder} onSelectedSortOrder={(sortOrder) => setGameQuery({ ...gameQuery, sortOrder })} />
+          <Heading>Developer by: <Link href="https://greddy.in" target="_black">Goutham Reddy</Link></Heading>
         </HStack>
         <GameGrid gameQuery={gameQuery} />
       </GridItem>
