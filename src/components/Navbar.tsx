@@ -11,7 +11,11 @@ const Navbar = () => {
       <Link to="/">
         <Image src={Logo} boxSize="60px" objectFit={'cover'} />
       </Link>
+
       <SearchInput />
+      <Link to="/about" >
+        <Text fontWeight="bold" className="nav-link" >About</Text>
+      </Link>
       <ColorModeSwitch />
     </HStack>
   );
