@@ -1,3 +1,4 @@
+import { Skeleton } from '@chakra-ui/react';
 import useTrailers from '../hooks/useTrailers';
 
 interface Props {
